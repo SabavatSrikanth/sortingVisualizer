@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <title>Srikanth's Sorting Visualizer</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Project Title -->
+  <h1>Sorting Algorithm Visualizer</h1>
+  <h3 class="author">Created by Srikanth</h3>
+
+  <!-- Controls -->
+  <div class="controls">
+
+    <button onclick="generateArray()">Generate Random Array</button>
+
+    <input id="customInput" type="text" placeholder="Example: 5,10,3,8,1" />
+
+    <button onclick="setCustomArray()">Use Custom Array</button>
+
+    <select id="algorithm">
+      <option value="bubble">Bubble Sort</option>
+      <option value="selection">Selection Sort</option>
+      <option value="insertion">Insertion Sort</option>
+      <option value="merge">Merge Sort</option>
+    </select>
+
+    <button onclick="startSort()">Start Sorting</button>
+    <button onclick="stopSort()">Stop</button>
+
+  </div>
+
+  <!-- Statistics -->
+  <div class="stats">
+    <p>Comparisons : <span id="comparisons">0</span></p>
+    <p>Swaps : <span id="swaps">0</span></p>
+  </div>
+
+  <!-- Color Legend -->
+  <div class="legend">
+    <p><span class="legend-box red"></span> Red = Comparing Elements</p>
+    <p><span class="legend-box blue"></span> Blue = Swapping Elements</p>
+  </div>
+
+  <!-- Bars Container -->
+  <div class="container" id="bars"></div>
+
+  <script src="script.js"></script>
+
+  <br><br>
+
+  <!-- Footer -->
+  <footer class="signature">
+    <span>© 2026 Srikanth | Sorting Algorithm Visualizer</span>
+  </footer>
+
+</body>
+</html>
